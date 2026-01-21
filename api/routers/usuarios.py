@@ -60,3 +60,4 @@ def eliminar_usuario(usuario_id: int, db: Session = Depends(get_db), api_key: st
     db.delete(usuario)
     db.commit()
     return {"ok": True, "mensaje": f"Usuario {usuario_id} eliminado"}
+

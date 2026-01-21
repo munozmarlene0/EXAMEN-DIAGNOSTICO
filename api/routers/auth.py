@@ -63,3 +63,7 @@ def login(credenciales: UsuarioLogin, api_key: str = Header(None), db: Session =
         "nombre_usuario": usuario.nombre_usuario,
         "nombre": f"{usuario.nombre} {usuario.apellido}"
     }
+
+
+
+

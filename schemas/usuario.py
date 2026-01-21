@@ -31,10 +31,10 @@ class UsuarioUpdate(BaseModel):
 class UsuarioResponse(UsuarioBase):
     id: int
     
-    class Config:
-        from_attributes = True
+    model_config = {"from_attributes": True}
 
 # Login simple
 class UsuarioLogin(BaseModel):
     nombre_usuario: str
     contrasena: str
+
